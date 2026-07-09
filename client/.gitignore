@@ -1,0 +1,163 @@
+# HTML files
+index.html
+sandbox.html
+
+# Generated files
+bin/
+gen/
+.inspatial/
+.inspatial/types/
+.inspatial/cache/
+
+# Log Files
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Temp Files
+*~
+*.*~
+.fuse_*
+yarn.lock
+cache/
+temp/
+.DS_Store
+
+# Project files
+test/*.dev.js
+test/*.dev.js.map
+
+# Bundle files
+bundle.js
+bundle.js.map
+*.bundle.js
+*.bundle.js.map
+
+# local tools
+publish
+/out
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+
+# API keys and sensitive configuration
+*.key
+*.pem
+config/secrets.json
+
+# Deno cache and dependencies
+.deno/
+deno_dir/
+deno.lock
+
+
+# Node.js (if used for any tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npmrc
+
+
+# JavaScript/TypeScript compiled outputs
+*.js.map
+*.d.ts.map
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage, Tests & InSights
+insights/
+coverage/
+test-results/
+tests/
+_test/
+.test/
+**/*.test.ts
+.spec/
+**/*.spec.ts
+*.lcov
+
+# Integrated Development Environment (IDE) files
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Archive files
+**/*.zip
+**/*.tar.gz
+**/*.tar
+**/*.tgz
+*.pack
+*.deb
+*.dylib
+# Build outputs and dist
+dist/*
+dist/
+dist/asset/*
+dist/asset/
+dist/index.html
+dist/kit.css
+dist/bundle.js
+
+# Database and Cloud files
+*.inspatial
+*.db
+*.sqlite
+*.sqlite3
+cloud-config.json
+.cloud-session
+
+# Backup files
+*.bak
+*.backup
+
+# Test outputs
+
+# Local development files
+.local/
+local/
+*.local
+
+# Documentation build
+docs/build/
+site/

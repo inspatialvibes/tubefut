@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "dev": "deno run -A --env-file=.env src/global/cloud.ts"
+  },
+  "imports": {
+    "@inspatial/cloud": "/Studio/inspatial-cloud/mod.ts"
+  }
+}
