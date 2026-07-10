@@ -1,61 +1,87 @@
 /*################################(AUTH WINDOW)################################*/
 
+import { AuthPageStyle } from "./style.ts";
+
 /*************************** (Const) ***************************/
 // Controlling the Auth Title based on the Auth Flow i.e current auth view
 const label = $(() => {
   switch (useAuth.flow.get()) {
     case "signin":
-      return "Let's get you signed in";
+      return "Welcome back to TubeFut";
     case "signup":
-      return "Let's get you signed up";
+      return "Create your TubeFut account";
     case "forgotPassword":
-      return "Let's help you reset your password";
+      return "Reset your TubeFut password";
     default:
       return;
   }
 });
 
-<Auth
-  axis={{
-    direction: "x",
-    reverse: true,
-  }}
-  // mode="all-in"
-  format="alto"
-  children={{
-    wrapper: {
-      background: "background",
-
-      stack: {
-        brand: {
-          variant: "AtIcon",
-          background: "muted",
-          color: "secondary",
-          radius: "full",
-        },
-
-        title: {
-          label: $(() => label.get()),
-          style: {
-            fontSize: "16px",
-          },
-          motion: "fade-d",
-        },
-
-        kind: {
-          format: "Tab",
-          children: {
+<Slot className={AuthPageStyle.root.getStyle()}>
+  <Auth
+    className={AuthPageStyle.auth.getStyle()}
+    axis={{
+      direction: "x",
+      reverse: false,
+    }}
+    mode="all-in"
+    children={{
+      media: {
+        display: false,
+      },
+      wrapper: {
+        className: AuthPageStyle.wrapper.getStyle(),
+        background: "transparent",
+        stack: {
+          className: AuthPageStyle.stack.getStyle(),
+          order: ["brand", "title", "kind", "form", "forgotPassword"],
+          brand: {
+            variant: "AtIcon",
+            background: "brand",
+            color: "invert",
             radius: "8",
+            size: "84",
+            padding: "14",
           },
-        },
 
-        form: {},
-        forgotPassword: {
-          Badge: {
-            children: "Forgot password?",
+          title: {
+            label: $(() => label.get()),
+            className: AuthPageStyle.title.getStyle(),
+            motion: "fade-d",
+          },
+
+          kind: {
+            format: "Tab",
+            children: {
+              radius: "8",
+            },
+          },
+
+          // oAuth: { providers: ["google"] },
+          divider: {},
+          form: {
+            emailField: {
+              placeholder: "Email address",
+            },
+            passwordField: {
+              placeholder: "Password",
+            },
+            passwordConfirmField: {
+              placeholder: "Confirm password",
+            },
+            submit: {
+              color: "brand",
+              radius: "8",
+            },
+          },
+          forgotPassword: {
+            Badge: {
+              children: "Forgot password?",
+              radius: "8",
+            },
           },
         },
       },
-    },
-  }}
-/>
+    }}
+  />
+</Slot>;

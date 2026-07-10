@@ -1,39 +1,28 @@
-
 /*######################################(CREATE THEME)######################################*/
 
-/**
- * This is your main theme configuration.
- * You can change these values to update how your app looks for light and dark mode.
- */
 export const GlobalTheme = createTheme({
   root: {
-    /*===================== Brand Color ======================*/
-    // Update this value to use your brand's main color.
-    "--brand": "hsla(274, 100%, 50%, 1)",
+    "--brand": "hsla(350, 100%, 58%, 1)",
+    "--accent": "hsla(45, 100%, 66%, 1)",
+    "--success": "hsla(164, 74%, 43%, 1)",
 
-    /*=================== Light Mode Colors ====================*/
-    // Tweak these values to match your light mode design.
-    "--window": "hsla(0, 0%, 100%, 0.3)",
-    "--surface": "hsla(0, 0%, 100%, 0.7)",
-    "--background": "hsla(228, 52%, 96%, 1)",
-    "--primary": "hsla(231, 42%, 15%, 1)",
-    "--secondary": "hsla(224, 46%, 89%, 1)",
-    "--muted": "hsla(228, 52%, 96%, 1)",
-    "--invert": "hsla(0, 0%, 100%, 1)",
+    "--window": "hsla(42, 100%, 96%, 0.72)",
+    "--surface": "hsla(42, 100%, 98%, 0.88)",
+    "--background": "hsla(44, 68%, 95%, 1)",
+    "--primary": "hsla(34, 76%, 8%, 1)",
+    "--secondary": "hsla(44, 86%, 76%, 1)",
+    "--muted": "hsla(43, 55%, 86%, 1)",
+    "--invert": "hsla(40, 28%, 5%, 1)",
   },
   dark: {
-    /*=================== Dark Mode Colors ====================*/
-    // Adjust these values for your ideal dark mode palette.
-    "--window": "hsla(229, 41%, 18%, 0.3)",
-    "--surface": "hsla(229, 41%, 18%, 0.6)",
-    "--background": "hsla(233, 44%, 12%, 1)",
-    "--primary": "hsla(0, 0%, 100%, 1)",
-    "--secondary": "hsla(232, 31%, 29%, 1)",
-    "--muted": "hsla(233, 44%, 12%, 0.25)",
-    "--invert": "hsla(231, 42%, 15%, 1)",
+    "--window": "hsla(42, 52%, 7%, 0.72)",
+    "--surface": "hsla(38, 44%, 10%, 0.82)",
+    "--background": "hsla(40, 46%, 4%, 1)",
+    "--primary": "hsla(44, 100%, 91%, 1)",
+    "--secondary": "hsla(43, 84%, 49%, 1)",
+    "--muted": "hsla(166, 38%, 15%, 0.72)",
+    "--invert": "hsla(40, 24%, 5%, 1)",
   },
-  /*=================== Attribute Selector ====================*/
-  // This determines how dark mode gets applied (e.g. data-theme attribute).
   attr: "data-theme",
 });
 

@@ -5,7 +5,7 @@ createRenderer({
   root: () => import("./root.tsx").then((m) => m.GlobalRoot),
   mount: "#app",
   mode: "auto",
-  debug: "minimal",
+  debug: false,
   globalGuard: true,
   extensions: [
     InTrigger(),

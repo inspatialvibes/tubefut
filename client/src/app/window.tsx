@@ -3,10 +3,10 @@
   style={{
     web: {
       overflow: "hidden",
-      height: "100vh",
+      minHeight: "100vh",
       width: "100vw",
     },
   }}
 >
-  <AuthWindow />
+  <EntryWindow />
 </Stack>

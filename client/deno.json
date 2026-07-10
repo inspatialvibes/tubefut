@@ -378,5 +378,9 @@
     ]
   },
   "nodeModulesDir": "auto",
-  "imports": {}
+  "imports": {},
+  "deploy": {
+    "org": "inspatialvibes",
+    "app": "tubefut"
+  }
 }
